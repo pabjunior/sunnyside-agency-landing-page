@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="./src/output.css" rel="stylesheet" />
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
+
+  <body class="font-barlow text-[18px]">
+    <header
+      class="h-125 bg-[url(../images/mobile/image-header.jpg)] bg-cover bg-center bg-no-repeat md:h-200 md:bg-[url(../images/desktop/image-header.jpg)]"
+    >
+      <nav class="relative flex justify-between p-6 md:p-10">
+        <img src="./images/logo.svg" alt="Sunnyside Agency Logo" />
+
+        <ul class="hidden space-x-5 text-white md:flex lg:space-x-10">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li>
+            <a
+              class="font-fraunces rounded-4xl bg-white p-4 font-bold text-gray-900 uppercase"
+              href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <img
+          class="cursor-pointer md:hidden"
+          id="menu-icon"
+          src="./images/icon-hamburger.svg"
+          alt="Menu icon"
+        />
+      </nav>
+
+      <div class="mt-10 text-center md:mt-24">
+        <h1
+          class="font-fraunces text-5xl font-extrabold tracking-widest text-white uppercase lg:text-7xl"
+        >
+          We are creatives
+        </h1>
+
+        <img
+          class="mx-auto mt-10 size-fit animate-bounce md:mt-24"
+          src="./images/icon-arrow-down.svg"
+          alt="Downward pointing arrow"
+        />
+      </div>
+    </header>
+
+    <!-- Mobile navigation menu  -->
+    <ul
+      id="mobile-menu"
+      class="text-grey-550 absolute top-25 right-5 left-5 mx-auto hidden space-y-6 bg-white p-10 text-center font-semibold md:hidden"
+    >
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Projects</a></li>
+      <li class="mt-10">
+        <a
+          class="font-fraunces rounded-4xl bg-yellow-500 px-10 py-5 font-bold text-gray-900 uppercase"
+          href="#"
+          >Contact</a
+        >
+      </li>
+    </ul>
+
+    <!-- Grid section -->
+    <section class="grid grid-cols-1 md:grid-cols-2">
+      <div
+        class="h-96 bg-[url(../images/mobile/image-transform.jpg)] bg-cover bg-center bg-no-repeat md:order-2 md:h-full md:bg-[url(../images/desktop/image-transform.jpg)]"
+      ></div>
+      <div>
+        <div class="p-12 text-center md:order-1 md:text-left lg:p-24">
+          <h2 class="font-fraunces mb-8 text-4xl font-black md:text-left">
+            Transform your brand
+          </h2>
+          <p class="text-grey-400 mb-5 text-base font-semibold">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <a
+            class="font-fraunces border-b-5 border-yellow-500 font-black uppercase"
+            href="#"
+            >Learn more</a
+          >
+        </div>
+      </div>
+
+      <div
+        class="h-96 bg-[url(../images/mobile/image-stand-out.jpg)] bg-cover bg-center bg-no-repeat md:order-3 md:h-full md:bg-[url(../images/desktop/image-stand-out.jpg)]"
+      ></div>
+      <div class="mb-10 p-12 text-center md:order-4 md:text-left lg:p-24">
+        <h2 class="font-fraunces mb-8 text-4xl font-black md:text-left">
+          Stand out to the right audience
+        </h2>
+        <p class="text-grey-400 mb-10 text-base font-semibold">
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we’ll build and extend
+          your brand in digital places.
+        </p>
+        <a
+          class="font-fraunces border-b-5 border-red-400 font-black uppercase"
+          href="#"
+          >Learn more</a
+        >
+      </div>
+      <div
+        class="h-auto bg-[url(../images/mobile/image-graphic-design.jpg)] bg-cover bg-center bg-no-repeat md:order-5 md:bg-[url(../images/desktop/image-graphic-design.jpg)]"
+      >
+        <div
+          class="mx-auto mt-72 max-w-md px-5 pt-24 pb-12 text-center text-green-800"
+        >
+          <h2 class="font-fraunces mb-8 text-4xl font-black">Graphic design</h2>
+          <p class="text-base font-semibold">
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+      </div>
+      <div
+        class="h-auto bg-[url(../images/mobile/image-photography.jpg)] bg-cover bg-center bg-no-repeat md:order-6 md:bg-[url(../images/desktop/image-photography.jpg)]"
+      >
+        <div
+          class="mx-auto mt-72 max-w-md px-5 pt-24 pb-12 text-center text-blue-800"
+        >
+          <h2 class="font-fraunces mb-8 text-4xl font-black">Photography</h2>
+          <p class="text-base font-semibold">
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial section -->
+    <section class="my-20 p-10 md:p-24">
+      <h2
+        class="font-fraunces text-grey-400 mb-10 bg-white text-center text-xl font-extrabold tracking-widest uppercase"
+      >
+        Client testimonials
+      </h2>
+
+      <div class="mt-20 grid grid-cols-1 gap-20 lg:grid-cols-3">
+        <div class="flex flex-col items-center space-y-10 text-center">
+          <img
+            class="size-24 rounded-full"
+            src="./images/image-emily.jpg"
+            alt="Portrait of Emily R., Marketing Director"
+          />
+          <p class="text-grey-600 text-base font-semibold">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <div class="space-y-1">
+            <h3 class="font-fraunces font-black">Emily R.</h3>
+            <p class="text-grey-600 text-sm font-semibold">
+              Marketing Director
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center space-y-10 text-center">
+          <img
+            class="size-24 rounded-full"
+            src="./images/image-thomas.jpg"
+            alt="Portrait of Thomas S., Chief Operating Officer"
+          />
+          <p class="text-grey-600 text-base font-semibold">
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <div class="space-y-1">
+            <h3 class="font-fraunces font-black">Thomas S.</h3>
+            <p class="text-grey-400 text-sm font-semibold">
+              Chief Operating Officer
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center space-y-10 text-center">
+          <img
+            class="size-24 rounded-full"
+            src="./images/image-jennie.jpg"
+            alt="Portrait of Jennie F., Business Owner"
+          />
+          <p class="text-grey-600 text-base font-semibold">
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <div class="space-y-1">
+            <h3 class="font-fraunces font-black">Jennie F.</h3>
+            <p class="text-grey-400 text-sm font-semibold">Business Owner</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid section -->
+    <section class="grid grid-cols-2 md:grid-cols-1">
+      <div
+        class="h-96 bg-[url(../images/mobile/image-gallery-milkbottles.jpg)] bg-cover bg-center bg-no-repeat md:h-auto md:bg-[url(../images/desktop/image-gallery-milkbottles.jpg)]"
+      ></div>
+      <div
+        class="h-96 bg-[url(../images/mobile/image-gallery-orange.jpg)] bg-cover bg-center bg-no-repeat md:h-auto md:bg-[url(../images/desktop/image-gallery-orange.jpg)]"
+      ></div>
+      <div
+        class="h-96 bg-[url(../images/mobile/image-gallery-cone.jpg)] bg-cover bg-center bg-no-repeat md:h-auto md:bg-[url(../images/desktop/image-gallery-cone.jpg)]"
+      ></div>
+      <div
+        class="h-96 bg-[url(../images/mobile/image-gallery-sugar-cubes.jpg)] bg-cover bg-center bg-no-repeat md:h-auto md:bg-[url(../images/desktop/image-gallery-sugar-cubes.jpg)]"
+      ></div>
+    </section>
+    About Services Projects Contact
+
+    <div>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

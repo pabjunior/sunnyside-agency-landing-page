@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;1,600&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Primary colors */
+  --color-red-400: hsl(7, 99%, 70%);
+  --color-yellow-500: hsl(51, 100%, 49%);
+  --color-green-800: hsl(167, 40%, 24%);
+  --color-blue-800: hsl(198, 62%, 26%);
+  --color-green-500: hsl(167, 34%, 41%);
+
+  /* Neutral colors */
+  --color-grey-950: hsl(212, 27%, 19%);
+  --color-grey-600: hsl(213, 9%, 39%);
+  --color-grey-550: hsl(232, 10%, 55%);
+  --color-grey-400: hsl(210, 4%, 67%);
+  --color-white: hsl(0, 100%, 100%);
+
+  /* Font */
+  --font-barlow: "Barlow", sans-serif;
+  --font-fraunces: "Fraunces", serif;
+}
