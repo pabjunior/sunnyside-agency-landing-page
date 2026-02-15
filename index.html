@@ -15,7 +15,7 @@
 
   <body class="font-barlow text-[18px]">
     <header
-      class="h-125 bg-[url(../images/mobile/image-header.jpg)] bg-cover bg-center bg-no-repeat md:h-200 md:bg-[url(../images/desktop/image-header.jpg)]"
+      class="min-h-screen bg-[url(../images/mobile/image-header.jpg)] bg-cover bg-center bg-no-repeat md:h-200 md:bg-[url(../images/desktop/image-header.jpg)]"
     >
       <nav class="relative flex justify-between p-6 md:p-10">
         <img src="./images/logo.svg" alt="Sunnyside Agency Logo" />
@@ -205,28 +205,80 @@
     </section>
 
     <!-- Grid section -->
-    <section class="grid grid-cols-2 md:grid-cols-1">
-      <div
-        class="h-96 bg-[url(../images/mobile/image-gallery-milkbottles.jpg)] bg-cover bg-center bg-no-repeat md:h-auto md:bg-[url(../images/desktop/image-gallery-milkbottles.jpg)]"
-      ></div>
-      <div
-        class="h-96 bg-[url(../images/mobile/image-gallery-orange.jpg)] bg-cover bg-center bg-no-repeat md:h-auto md:bg-[url(../images/desktop/image-gallery-orange.jpg)]"
-      ></div>
-      <div
-        class="h-96 bg-[url(../images/mobile/image-gallery-cone.jpg)] bg-cover bg-center bg-no-repeat md:h-auto md:bg-[url(../images/desktop/image-gallery-cone.jpg)]"
-      ></div>
-      <div
-        class="h-96 bg-[url(../images/mobile/image-gallery-sugar-cubes.jpg)] bg-cover bg-center bg-no-repeat md:h-auto md:bg-[url(../images/desktop/image-gallery-sugar-cubes.jpg)]"
-      ></div>
+    <section class="grid grid-cols-2 md:grid-cols-4">
+      <div>
+        <img
+          class="md:hidden"
+          src="./images/mobile/image-gallery-milkbottles.jpg"
+          alt=""
+        />
+        <img
+          class="hidden md:block"
+          src="./images/desktop/image-gallery-milkbottles.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="md:hidden"
+          src="./images/mobile/image-gallery-orange.jpg"
+          alt=""
+        />
+        <img
+          class="hidden md:block"
+          src="./images/desktop/image-gallery-orange.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="md:hidden"
+          src="./images/mobile/image-gallery-cone.jpg"
+          alt=""
+        />
+        <img
+          class="hidden md:block"
+          src="./images/desktop/image-gallery-cone.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="md:hidden"
+          src="./images/mobile/image-gallery-sugar-cubes.jpg"
+          alt=""
+        />
+        <img
+          class="hidden md:block"
+          src="./images/desktop/image-gallery-sugarcubes.jpg"
+          alt=""
+        />
+      </div>
     </section>
-    About Services Projects Contact
 
+    <footer class="flex flex-col items-center bg-green-500 p-10">
+      <img class="fill-current" src="./images/logo.svg" alt="" />
+
+      <ul class="mt-10 flex space-x-5 font-semibold text-green-800">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+
+      <div class="mt-10 flex space-x-5">
+        <a href="#"><img src="./images/icon-facebook.svg " alt="" /></a>
+        <a href="#"><img src="./images/icon-instagram.svg " alt="" /></a>
+        <a href="#"><img src="./images/icon-twitter.svg " alt="" /></a>
+        <a href="#"><img src="./images/icon-pinterest.svg " alt="" /></a>
+      </div>
+    </footer>
+    <!-- 
     <div>
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
 
     <script src="js/script.js"></script>
   </body>
